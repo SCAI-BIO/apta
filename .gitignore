@@ -1,0 +1,13 @@
+
+# macOS
+.DS_Store
+**/.DS_Store
+# Python virtual envs
+.venv/
+**/.venv/
+venv/
+**/venv/
+
+# Secrets
+config/secrets.env
+**/secrets.env
