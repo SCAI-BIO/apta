@@ -44,9 +44,7 @@ The dashboard summarises the corpus at multiple levels: search strategy, source 
 
 Open the hosted dashboard link provided in the delivery email:
 
-```text
-[https://postcovid-apta.netlify.app/]
-```
+[Interactive hosted dashboard](https://postcovid-apta.netlify.app/)
 
 This is the recommended review mode for non-technical reviewers because it preserves the interactive charts, hover text, tables, and narrative sections.
 
