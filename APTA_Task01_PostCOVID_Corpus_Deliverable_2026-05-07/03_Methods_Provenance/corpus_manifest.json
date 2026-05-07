@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "tool": "build_unified_corpus.py",
+  "run_started_utc": "2026-05-07T09:31:16.240864+00:00",
+  "run_finished_utc": "2026-05-07T09:33:10.355952+00:00",
+  "query_yaml": {
+    "path": "corpus_queries.yaml",
+    "sha256": "ef769a7739371293e3707958edda27fe9450fac11845ddfbb9278e109804cd83"
+  },
+  "outputs": {
+    "trials_csv": {
+      "path": "output/trials.csv",
+      "sha256": "b1a33834f40e3dece79263122338d31f7ed499cbb6f7e32518dfe1d5c564509c"
+    },
+    "articles_csv": {
+      "path": "output/articles.csv",
+      "sha256": "a250ed7753478b7ab373fbe01f45cccedc701654c984e37b62235f05b6cb7cf8"
+    },
+    "evidence_corpus_csv": {
+      "path": "output/evidence_corpus.csv",
+      "sha256": "b827dc14c4b5028e22de2097f646011686214be975281e00418d139aaf9e0287"
+    },
+    "links_csv": {
+      "path": "output/trial_article_links.csv",
+      "sha256": "33b0895faa35883e62e3ebc2fb17cdbf8c2f9fce692bd687cd6784a7855e09a2"
+    }
+  },
+  "counts": {
+    "raw": {
+      "ctgov_raw": 659,
+      "pubmed_raw": 2428,
+      "europepmc_raw": 1387,
+      "openalex_raw": 1837
+    },
+    "start_year": 2020,
+    "end_year": 2026,
+    "articles_after_year_filter": 5606,
+    "articles_after_conjunctive_filter": 3083,
+    "articles_after_dedup": 2282,
+    "trials_kept": 602,
+    "articles_kept": 2282,
+    "links": 258,
+    "evidence_units": 2802
+  },
+  "query_provenance": {
+    "chatbot_logs_dir": "chatbot_logs",
+    "chatbot_logs": [
+      {
+        "path": "chatbot_logs/2026-04-30T18-03-59Z_gpt-4o-2024-08-06_expansion.json",
+        "sha256": "c2e18a146ad3b14f5b7c69a2207322b3a6ddf66a0398732115c41d753fa73248"
+      },
+      {
+        "path": "chatbot_logs/2026-04-30T18-16-28Z_gpt-4o-2024-08-06_discovery.json",
+        "sha256": "6da1a33bcfca03e13441cf567d6aa2e4cbc32239a119a9561d73b45b83de8f6c"
+      },
+      {
+        "path": "chatbot_logs/2026-05-01T17-03-56Z_gpt-4o-2024-08-06_expansion.json",
+        "sha256": "3dbb13defeab2457b68a5a4ec59a8227b6de9c5c04ba0281893cc090fe59cbbb"
+      },
+      {
+        "path": "chatbot_logs/2026-05-01T17-04-35Z_gpt-4o-2024-08-06_discovery.json",
+        "sha256": "200c74f49ec2ae736463bc1126a4f59f676e8924e645407af8abf42adc84916b"
+      },
+      {
+        "path": "chatbot_logs/2026-05-01T17-12-34Z_gpt-4o-2024-08-06_discovery.json",
+        "sha256": "e147374ac19cb970c766dfe266c0cebdc6875a78f2bb41b98cab3ddfb3137e34"
+      }
+    ]
+  }
+}

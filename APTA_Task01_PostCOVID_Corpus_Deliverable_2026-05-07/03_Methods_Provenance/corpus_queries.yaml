@@ -1,0 +1,385 @@
+# corpus_queries.yaml
+# =============================================================================
+# Externalized queries and filter terms for the unified Post-COVID corpus
+# builder. Edit this file to refine searches between iterations — no code
+# changes needed (per APTA Task 1 subtask 3: "2nd iteration: search refinement").
+# =============================================================================
+
+# ── Topic terms (one of these MUST appear in title/abstract) ─────────────────
+# ── Disease scope (grouped — used by both corpus builder and dashboard) ───────
+# The corpus builder flattens all groups into one postcovid_terms list.
+# The dashboard reads the grouped structure to plot disease scope coverage.
+disease_scope:
+  "Post-COVID / Long COVID":
+    - "long covid"
+    - "post-covid"
+    - "post covid"
+    - "pasc"
+    - "post-acute sequelae"
+    - "long-haul covid"
+    - "long haul covid"
+    - "post-acute covid"
+    - "covid-19 sequelae"
+    - "chronic covid"
+    - "ongoing covid"
+    - "post-covid-19 condition"
+    - "post-covid syndrome"
+
+  "ME/CFS":
+    - "myalgic encephalomyelitis"
+    - "chronic fatigue syndrome"
+    - "me/cfs"
+    - "me-cfs"
+    - "systemic exertion intolerance disease"
+    - "seid"
+    - "fatigue syndrome, chronic"
+
+  "Post-viral / post-infectious (other)":
+    - "post-viral fatigue"
+    - "postviral fatigue"
+    - "post-viral syndrome"
+    - "post-infectious fatigue"
+    - "postinfectious fatigue"
+    - "post-infectious syndrome"
+    - "post-acute infection syndrome"
+    - "post-acute infectious syndrome"
+    - "pais"
+    - "post-sars syndrome"
+    - "post-ebola syndrome"
+    - "post-q fever"
+    - "post-treatment lyme"
+    - "ptlds"
+    - "post-mononucleosis fatigue"
+
+  "POTS / dysautonomia":
+    - "postural orthostatic tachycardia syndrome"
+    - "pots"
+    - "dysautonomia"
+
+# ── Intervention/trial terms (one of these MUST also appear) ─────────────────
+# This is the conjunctive half of the topic filter — combined with the
+# postcovid_terms above, it requires BOTH to be present. Fixes the loose
+# filter that previously let in off-topic studies.
+intervention_terms:
+  - "randomized"
+  - "randomised"
+  - "rct"
+  - "randomized controlled trial"
+  - "randomised controlled trial"
+  - "clinical trial"
+  - "placebo"
+  - "placebo-controlled"
+  - "double-blind"
+  - "double blind"
+  - "single-blind"
+  - "open-label"
+  - "phase i"
+  - "phase ii"
+  - "phase iii"
+  - "phase iv"
+  - "drug"
+  - "drug therapy"
+  - "pharmacological"
+  - "pharmacotherapy"
+  - "treatment"
+  - "intervention"
+  - "antiviral"
+  - "anticoagulant"
+  - "immunomodulator"
+  - "immunomodulation"
+  - "rehabilitation"
+  - "naltrexone"
+  - "metformin"
+  - "bc007"
+  - "nirmatrelvir"
+  - "paxlovid"
+  - "corticosteroid"
+  - "colchicine"
+  - "ivermectin"
+  - "vitamin d"
+  - "melatonin"
+  - "ssri"
+  - "vortioxetine"
+  - rituximab
+  - ivig
+  - plasmapheresis
+  - plasma exchange
+  - "primary endpoint"
+  - "secondary endpoint"
+  - "primary outcome"
+  - "secondary outcome"
+  - "clinical endpoint"
+  - "readout"
+  - "biomarker"
+  - "surrogate endpoint"
+  - "composite endpoint"
+
+  # ADD — digital health, wearables, mobile/app
+  - "wearable"
+  - "wearable device"
+  - "smartwatch"
+  - "fitness tracker"
+  - "actigraphy"
+  - "heart rate variability"
+  - "hrv"
+  - "digital biomarker"
+  - "digital endpoint"
+  - "digital health"
+  - "mhealth"
+  - "mobile health"
+  - "smartphone app"
+  - "mobile app"
+  - "remote monitoring"
+  - "telemonitoring"
+  - "telehealth"
+  - "activity monitor"
+  - "accelerometer"
+  - "fitbit"
+  - "apple watch"
+  - "continuous monitoring"
+  - "passive sensing"
+  - "ecological momentary assessment"
+  - "ema"
+  - "ambulatory monitoring"
+  - "biosensor"
+  - "photoplethysmography"
+  - "ppg"
+
+  # ADD — speech / voice biomarkers
+  - "speech biomarker"
+  - "vocal biomarker"
+  - "voice analysis"
+  - "speech analysis"
+  - "acoustic analysis"
+
+  # ADD — patient-reported outcomes & functional readouts
+  - "patient-reported outcome"
+  - "promis"
+  - "eq-5d"
+  - "sf-36"
+  - "facit-f"
+  - "chalder fatigue"
+  - "depaul symptom questionnaire"
+  - "post-exertional malaise"
+  - "pem"
+  - "6-minute walk"
+  - "six-minute walk"
+  - "6mwt"
+  - "cardiopulmonary exercise testing"
+  - "cpet"
+  - "sit-to-stand"
+
+# ── Discard terms (used as soft signal in study-type filter) ─────────────────
+discard_terms:
+  - "systematic review"
+  - "meta-analysis"
+  - "narrative review"
+  - "scoping review"
+  - "umbrella review"
+  - "editorial"
+  - "letter to the editor"
+  - "commentary"
+  - "case report"
+  - "case series"
+  - "study protocol"
+    # ADD — observational study types (closes the OpenAlex/EPMC gap)
+  - "cohort study"
+  - "observational study"
+  - "cross-sectional study"
+  - "prospective cohort"
+  - "retrospective cohort"
+  - "registry study"
+  - "population-based study"
+
+# ── PubMed queries ───────────────────────────────────────────────────────────
+pubmed_queries:
+  - label: "PubMed_RCT_Core"
+    query: >
+      ("long COVID"[tiab] OR "post-COVID"[tiab] OR "post COVID"[tiab] OR
+       "PASC"[tiab] OR "post-acute sequelae"[tiab] OR "long-haul COVID"[tiab] OR
+       "post-acute COVID"[tiab] OR "post-COVID-19 condition"[tiab])
+      AND
+      ("randomized controlled trial"[pt] OR "randomised controlled trial"[tiab]
+       OR "RCT"[tiab] OR "clinical trial"[pt])
+
+  - label: "PubMed_Pharmacological"
+    query: >
+      ("long COVID"[tiab] OR "post-COVID"[tiab] OR "PASC"[tiab] OR
+       "post-acute sequelae"[tiab])
+      AND
+      ("pharmacological"[tiab] OR "drug therapy"[tiab] OR "treatment"[tiab] OR
+       "intervention"[tiab])
+      AND
+      ("clinical trial"[pt] OR "randomized"[tiab] OR "placebo"[tiab])
+
+  - label: "PubMed_DrugClasses"
+    query: >
+      ("long COVID"[tiab] OR "post-COVID"[tiab] OR "PASC"[tiab])
+      AND
+      ("anticoagulant"[tiab] OR "antiviral"[tiab] OR "immunomodulator"[tiab] OR
+       "low-dose naltrexone"[tiab] OR "metformin"[tiab] OR "BC007"[tiab] OR
+       "Paxlovid"[tiab] OR "nirmatrelvir"[tiab] OR "SSRIs"[tiab] OR
+       "vortioxetine"[tiab] OR "corticosteroid"[tiab] OR "colchicine"[tiab] OR
+       "ivermectin"[tiab] OR "vitamin D"[tiab] OR "melatonin"[tiab])
+
+  - label: "PubMed_MeSH"
+    query: >
+      ("COVID-19"[MeSH] OR "SARS-CoV-2"[MeSH])
+      AND "post-acute sequelae"[tiab]
+      AND ("Randomized Controlled Trial"[pt] OR "Clinical Trial"[pt])
+
+  # ADD (Post-COVID + related post-viral / ME-CFS)
+  - label: "PubMed_MECFS_RCT"
+    query: >
+      ("myalgic encephalomyelitis"[tiab] OR "chronic fatigue syndrome"[tiab] OR
+       "ME/CFS"[tiab] OR "systemic exertion intolerance disease"[tiab] OR
+       "post-viral fatigue"[tiab] OR "post-viral syndrome"[tiab])
+      AND
+      ("randomized controlled trial"[pt] OR "clinical trial"[pt] OR
+       "randomised controlled trial"[tiab] OR "RCT"[tiab] OR "placebo"[tiab])
+
+  - label: "PubMed_PostInfectious"
+    query: >
+      ("post-infectious fatigue"[tiab] OR "post-acute infection syndrome"[tiab] OR
+       "post-treatment Lyme"[tiab] OR "post-SARS"[tiab] OR
+       "post-Ebola"[tiab] OR "post-Q fever"[tiab])
+      AND
+      ("randomized"[tiab] OR "clinical trial"[pt] OR "treatment"[tiab])
+
+  - label: "PubMed_POTS_Dysautonomia"
+    query: >
+      ("POTS"[tiab] OR "postural orthostatic tachycardia"[tiab] OR
+       "dysautonomia"[tiab])
+      AND ("long COVID"[tiab] OR "PASC"[tiab] OR "ME/CFS"[tiab] OR
+           "myalgic encephalomyelitis"[tiab])
+      AND ("randomized"[tiab] OR "clinical trial"[pt] OR "trial"[tiab])
+
+  # ADD
+  - label: "PubMed_DigitalBiomarkers"
+    query: >
+      ("long COVID"[tiab] OR "post-COVID"[tiab] OR "PASC"[tiab] OR
+       "ME/CFS"[tiab] OR "myalgic encephalomyelitis"[tiab] OR
+       "chronic fatigue syndrome"[tiab])
+      AND
+      ("wearable"[tiab] OR "actigraphy"[tiab] OR "digital biomarker"[tiab] OR
+       "digital endpoint"[tiab] OR "mHealth"[tiab] OR "smartphone"[tiab] OR
+       "mobile app"[tiab] OR "remote monitoring"[tiab] OR
+       "heart rate variability"[tiab])
+
+  - label: "PubMed_SpeechVoice"
+    query: >
+      ("long COVID"[tiab] OR "post-COVID"[tiab] OR "PASC"[tiab] OR
+       "ME/CFS"[tiab] OR "myalgic encephalomyelitis"[tiab] OR
+       "chronic fatigue syndrome"[tiab])
+      AND
+      ("speech biomarker"[tiab] OR "vocal biomarker"[tiab] OR
+       "voice analysis"[tiab] OR "speech analysis"[tiab] OR
+       "acoustic analysis"[tiab])
+
+  - label: "PubMed_FunctionalOutcomes"
+    query: >
+      ("long COVID"[tiab] OR "post-COVID"[tiab] OR "PASC"[tiab] OR
+       "ME/CFS"[tiab] OR "post-viral fatigue"[tiab])
+      AND
+      ("6-minute walk"[tiab] OR "cardiopulmonary exercise testing"[tiab] OR
+       "CPET"[tiab] OR "post-exertional malaise"[tiab] OR
+       "patient-reported outcome"[tiab])
+      AND
+      ("randomized"[tiab] OR "clinical trial"[pt] OR "trial"[tiab])
+  
+  - label: "PubMed_Autoantibody"
+    query: >
+      ("long COVID"[tiab] OR "post-COVID"[tiab] OR "PASC"[tiab] OR
+      "ME/CFS"[tiab] OR "myalgic encephalomyelitis"[tiab])
+      AND
+      ("rituximab"[tiab] OR "IVIG"[tiab] OR "intravenous immunoglobulin"[tiab] OR
+      "plasma exchange"[tiab] OR "plasmapheresis"[tiab] OR
+      "GPCR autoantibody"[tiab] OR "beta-2 adrenergic"[tiab] OR
+      "BC007"[tiab])
+
+  - label: "PubMed_MeSH_Drugs"
+    query: >
+      ("Post-Acute COVID-19 Syndrome"[MeSH] OR "Fatigue Syndrome, Chronic"[MeSH])
+      AND ("Randomized Controlled Trial"[pt] OR "Clinical Trial"[pt])
+      AND ("Antiviral Agents"[MeSH] OR "Immunologic Factors"[MeSH] OR
+          "Anticoagulants"[MeSH] OR "Adrenergic Uptake Inhibitors"[MeSH])
+# ── Europe PMC queries ───────────────────────────────────────────────────────
+
+europepmc_queries:
+  - 'TITLE_ABS:"long COVID" AND TITLE_ABS:("randomised controlled trial" OR "randomized controlled trial" OR "RCT") AND PUB_YEAR:[2020 TO 2026]'
+  - 'TITLE_ABS:"post-COVID" AND TITLE_ABS:(pharmacological OR treatment OR intervention) AND PUB_YEAR:[2020 TO 2026]'
+  - 'TITLE_ABS:"PASC" AND TITLE_ABS:(trial OR placebo OR randomized OR randomised) AND PUB_YEAR:[2020 TO 2026]'
+  - 'TITLE_ABS:"post-acute sequelae" AND TITLE_ABS:("clinical trial" OR "randomized" OR "drug") AND PUB_YEAR:[2020 TO 2026]'
+  - 'TITLE_ABS:"long-haul COVID" AND TITLE_ABS:(treatment OR therapy OR pharmacological) AND PUB_YEAR:[2020 TO 2026]'
+  # ADDED MORE CFS terms
+  - 'TITLE_ABS:("myalgic encephalomyelitis" OR "chronic fatigue syndrome" OR "ME/CFS") AND TITLE_ABS:("randomized controlled trial" OR "RCT" OR "placebo") AND PUB_YEAR:[2015 TO 2026]'
+  - 'TITLE_ABS:("post-viral fatigue" OR "post-viral syndrome" OR "post-infectious fatigue") AND TITLE_ABS:(trial OR treatment OR randomised OR randomized) AND PUB_YEAR:[2015 TO 2026]'
+  - 'TITLE_ABS:("postural orthostatic tachycardia" OR "dysautonomia") AND TITLE_ABS:("long COVID" OR "ME/CFS") AND PUB_YEAR:[2020 TO 2026]'
+
+  # ADD more CFS terms
+  - 'TITLE_ABS:("long COVID" OR "post-COVID" OR "PASC" OR "ME/CFS" OR "myalgic encephalomyelitis") AND TITLE_ABS:(wearable OR actigraphy OR "digital biomarker" OR mHealth OR "mobile app" OR "heart rate variability") AND PUB_YEAR:[2018 TO 2026]'
+  - 'TITLE_ABS:("long COVID" OR "post-COVID" OR "ME/CFS") AND TITLE_ABS:("speech biomarker" OR "vocal biomarker" OR "voice analysis" OR "acoustic analysis") AND PUB_YEAR:[2018 TO 2026]'
+  - 'TITLE_ABS:("long COVID" OR "post-COVID" OR "PASC" OR "ME/CFS") AND TITLE_ABS:("6-minute walk" OR "cardiopulmonary exercise" OR "post-exertional malaise" OR "patient-reported outcome") AND PUB_YEAR:[2018 TO 2026]'
+
+  # ADD auto anti bodies
+  - 'TITLE_ABS:("long COVID" OR "post-COVID" OR "PASC" OR "ME/CFS" OR "myalgic encephalomyelitis") AND TITLE_ABS:(rituximab OR IVIG OR "intravenous immunoglobulin" OR "plasma exchange" OR plasmapheresis OR "BC007" OR "beta-2 adrenergic") AND PUB_YEAR:[2015 TO 2026]'
+
+  # Preprints via Europe PMC (medRxiv + bioRxiv)
+  - 'TITLE_ABS:("long COVID" OR "post-COVID" OR "PASC") AND TITLE_ABS:(randomized OR placebo OR trial) AND SRC:PPR AND PUB_YEAR:[2020 TO 2026]'
+  - 'TITLE_ABS:("myalgic encephalomyelitis" OR "chronic fatigue syndrome" OR "ME/CFS") AND TITLE_ABS:(randomized OR placebo OR trial) AND SRC:PPR AND PUB_YEAR:[2020 TO 2026]'
+  - 'TITLE_ABS:("long COVID" OR "post-COVID" OR "PASC" OR "ME/CFS") AND TITLE_ABS:(wearable OR "digital biomarker" OR "speech biomarker") AND SRC:PPR AND PUB_YEAR:[2020 TO 2026]'
+
+# ── Semantic Scholar queries ─────────────────────────────────────────────────
+# semantic_scholar_queries:
+  # - "long COVID randomized controlled trial treatment"
+  # - "post-COVID syndrome pharmacological intervention clinical trial"
+  # - "PASC treatment RCT placebo"
+  # - "post-acute sequelae SARS-CoV-2 drug therapy randomized"
+  # - "long COVID antiviral anticoagulant immunomodulator trial"
+  # - "long COVID low-dose naltrexone metformin trial"
+  # - "long COVID BC007 nirmatrelvir clinical trial"
+semantic_scholar_queries: []
+
+# ── OpenAlex queries ─────────────────────────────────────────────────────────
+
+openalex_queries:
+  - "long COVID randomized controlled trial pharmacological"
+  - "post-COVID treatment clinical trial drug"
+  - "PASC intervention randomized placebo"
+  - "post-acute sequelae COVID drug therapy trial"
+  
+  # ADDED CFS
+  - "myalgic encephalomyelitis chronic fatigue syndrome randomized trial"
+  - "post-viral fatigue syndrome treatment clinical trial"
+  - "ME/CFS pharmacological intervention placebo"
+  # ADD
+  - "long COVID wearable digital biomarker clinical trial"
+  - "post-COVID speech voice biomarker"
+  - "ME/CFS smartphone app remote monitoring trial"
+
+# ── ClinicalTrials.gov ───────────────────────────────────────────────────────
+#ctgov_query: '"Long COVID" OR "Post-COVID-19 Condition" OR PASC OR "post-acute sequelae of SARS-CoV-2"'
+ctgov_query: '"Long COVID" OR "Post-COVID-19 Condition" OR PASC OR "post-acute sequelae of SARS-CoV-2" OR "Myalgic Encephalomyelitis" OR "Chronic Fatigue Syndrome" OR "ME/CFS" OR "Post-Viral Fatigue Syndrome" OR "Post-Treatment Lyme Disease Syndrome" OR "Postural Orthostatic Tachycardia Syndrome"'
+
+# Status → priority tier (5 = highest evidence value)
+ctgov_status_priority:
+  COMPLETED: 5
+  ACTIVE_NOT_RECRUITING: 4
+  RECRUITING: 3
+  ENROLLING_BY_INVITATION: 3
+  NOT_YET_RECRUITING: 2
+  SUSPENDED: 2
+  TERMINATED: 2
+  WITHDRAWN: 1
+  UNKNOWN: 1
+
+# ── Pipeline config ──────────────────────────────────────────────────────────
+config:
+  max_pubmed: 50000
+  max_europepmc: 2000
+  max_semantic_scholar: 0
+  max_openalex: 2000
+  request_delay: 0.35
+  start_year: 2020
+  end_year: 2026
+  ncbi_email: "neginbabaiha@gmail.com"   # override via env var NCBI_EMAIL
