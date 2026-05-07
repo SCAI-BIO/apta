@@ -56,12 +56,6 @@ Open the included HTML file directly in a modern browser:
 01_Dashboard/corpus_dashboard.html
 ```
 
-or, if renamed for hosting:
-
-```text
-01_Dashboard/index.html
-```
-
 Recommended browsers: Chrome, Edge, Safari, or Firefox. Internet access may be required because the dashboard loads Plotly.js from an external CDN unless a fully offline Plotly bundle has been included.
 
 ### Option C — machine-readable catalogue review
@@ -81,7 +75,7 @@ These files are intended for technical review, downstream analysis, import into 
 The professional handover package should be organised as follows:
 
 ```text
-APTA_Task01_PostCOVID_Corpus_Deliverable_v1.0_2026-05-07/
+APTA_Task01/
 │
 ├── README_Task01_Deliverable.md
 │
@@ -110,8 +104,6 @@ APTA_Task01_PostCOVID_Corpus_Deliverable_v1.0_2026-05-07/
 └── 05_Archive/
     └── dashboard_snapshot.pdf              # optional static record copy
 ```
-
-If a hosted dashboard is used, the `dashboard_link.txt` file should contain the current review URL and the date/time of deployment.
 
 ---
 
