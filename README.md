@@ -4,6 +4,8 @@
 **Scope:** Transforming fragmented Post-COVID / Long COVID / PASC clinical evidence into a structured, reproducible, graph-queryable knowledge layer  
 **Status:** Active · Task-gated delivery
 
+![Knowledge graph — interventions × outcomes](./assets/kg_preview.png)
+
 ---
 
 ## What this project does
@@ -43,14 +45,6 @@ Biomedical Literature (PubMed · PMC · ClinicalTrials.gov · PDF)
 ```
 
 Every extraction run is stamped with a run ID, model version, and SHA-256 corpus hash — making results fully reproducible and auditable.
-
----
-
-## Knowledge graph preview
-
-Interventions (drugs, procedures, behavioural), outcomes, and their co-occurrence relationships extracted from the Post-COVID trial corpus.
-
-![Knowledge graph — interventions × outcomes](./assets/kg_preview.png)
 
 ---
 
