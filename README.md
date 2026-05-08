@@ -2,8 +2,8 @@
 
 **Collaboration:** Fraunhofer SCAI × APTA / BIOTECK  
 **Scope:** Transforming fragmented Post-COVID / Long COVID / PASC clinical evidence into a structured, reproducible, graph-queryable knowledge layer  
-**Status:** Active · Task-gated delivery
-
+**Status:** Active · Task-gated delivery  
+[![Dashboard](https://img.shields.io/badge/Live%20Dashboard-postcovid--apta.netlify.app-blue?style=flat-square&logo=netlify)](https://postcovid-apta.netlify.app)
 ![Knowledge graph — interventions × outcomes](./assets/kg_preview.png)
 
 ---
