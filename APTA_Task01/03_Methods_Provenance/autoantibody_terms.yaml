@@ -1,0 +1,39 @@
+therapies:
+  Rituximab / anti-CD20:
+    - rituximab
+    - rituxan
+    - mabthera
+    - anti cd20
+    - anti-cd20
+
+  IVIG / immunoglobulin:
+    - ivig
+    - intravenous immunoglobulin
+    - immunoglobulin
+
+  Therapeutic plasma exchange:
+    - plasma exchange
+    - plasmapheresis
+    - therapeutic plasma exchange
+
+targets:
+  GPCR autoantibodies:
+    - gpcr autoantibody
+    - g protein coupled receptor antibody
+    - g-protein coupled receptor antibody
+
+  Beta-2 adrenergic receptor autoantibodies:
+    - beta 2 adrenergic receptor antibody
+    - beta-2 adrenergic receptor antibody
+    - β2 adrenergic receptor antibody
+    - b2ar
+
+  AT1R autoantibody:
+    - at1r
+    - angiotensin receptor antibody
+    - angiotensin II type 1 receptor antibody
+
+  ACE2 autoantibody:
+    - ace2 antibody
+    - anti ace2
+    - anti-ace2

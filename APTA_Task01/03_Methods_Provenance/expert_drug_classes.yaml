@@ -1,0 +1,69 @@
+Naltrexone / LDN:
+  - naltrexone
+  - ldn
+  - low-dose naltrexone
+  - low dose naltrexone
+
+Metformin:
+  - metformin
+  - metformin hydrochloride
+  - glucophage
+
+Paxlovid / Nirmatrelvir:
+  - paxlovid
+  - nirmatrelvir
+
+Corticosteroids:
+  - corticosteroid
+  - prednisone
+  - prednisolone
+  - methylprednisolone
+  - dexamethasone
+
+SSRIs / SNRIs:
+  - ssri
+  - snri
+  - fluoxetine
+  - sertraline
+  - fluvoxamine
+  - vortioxetine
+  - duloxetine
+  - venlafaxine
+
+# --- Aptamer Therapeutics ---
+
+Aptamers (General):
+  - aptamer
+  - dna aptamer
+  - rna aptamer
+  - nucleic acid aptamer
+  - oligonucleotide aptamer
+  - selex
+  - systematic evolution of ligands
+
+Thrombin Aptamers:
+  - thrombin aptamer
+  - nu172
+  - hd22
+  - hd1 aptamer
+  - anti-thrombin aptamer
+  - pegnivacogin
+
+Spike / ACE2 Aptamers:
+  - spike aptamer
+  - ace2 aptamer
+  - cov2-rbd aptamer
+  - sars-cov-2 aptamer
+  - receptor binding domain aptamer
+  - rbd aptamer
+
+CXCL12 Aptamers:
+  - nox-a12
+  - olaptesed pegol
+  - cxcl12 aptamer
+
+Anti-Inflammatory Aptamers:
+  - il-6 aptamer
+  - nf-kb aptamer
+  - vegf aptamer
+  - pegaptanib
