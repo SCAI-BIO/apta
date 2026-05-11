@@ -414,7 +414,7 @@ openalex_queries:
 
 # ── ClinicalTrials.gov ───────────────────────────────────────────────────────
 #ctgov_query: '"Long COVID" OR "Post-COVID-19 Condition" OR PASC OR "post-acute sequelae of SARS-CoV-2"'
-ctgov_query: '"Long COVID" OR "Post-COVID-19 Condition" OR PASC OR "post-acute sequelae of SARS-CoV-2" OR "Myalgic Encephalomyelitis" OR "Chronic Fatigue Syndrome" OR "ME/CFS" OR "Post-Viral Fatigue Syndrome" OR "Post-Treatment Lyme Disease Syndrome" OR "Postural Orthostatic Tachycardia Syndrome"'
+#ctgov_query: '"Long COVID" OR "Post-COVID-19 Condition" OR PASC OR "post-acute sequelae of SARS-CoV-2" OR "Myalgic Encephalomyelitis" OR "Chronic Fatigue Syndrome" OR "ME/CFS" OR "Post-Viral Fatigue Syndrome" OR "Post-Treatment Lyme Disease Syndrome" OR "Postural Orthostatic Tachycardia Syndrome"'
 
 # Status → priority tier (5 = highest evidence value)
 ctgov_status_priority:

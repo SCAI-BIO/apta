@@ -67,3 +67,152 @@ Anti-Inflammatory Aptamers:
   - nf-kb aptamer
   - vegf aptamer
   - pegaptanib
+
+# --- Antivirals (viral persistence) ---
+
+Valacyclovir / Acyclovir:
+  - valacyclovir
+  - valtrex
+  - acyclovir
+  - aciclovir
+  - herpesvirus antiviral
+
+Ritonavir:
+  - ritonavir
+  - norvir
+  - nirmatrelvir-ritonavir
+  - ritonavir-boosted
+
+# --- Anticoagulants / Antiplatelet ---
+
+Aspirin:
+  - aspirin
+  - acetylsalicylic acid
+  - asa
+  - low-dose aspirin
+
+Heparin:
+  - heparin
+  - low-molecular-weight heparin
+  - lmwh
+  - enoxaparin
+  - tinzaparin
+  - dalteparin
+
+DOACs:
+  - doac
+  - direct oral anticoagulant
+  - rivaroxaban
+  - xarelto
+  - apixaban
+  - eliquis
+
+# --- Immunomodulators ---
+
+IVIg:
+  - ivig
+  - intravenous immunoglobulin
+  - iv immunoglobulin
+  - human immunoglobulin
+  - immunoglobulin infusion
+
+Baricitinib:
+  - baricitinib
+  - olumiant
+  - jak inhibitor
+
+Tocilizumab:
+  - tocilizumab
+  - actemra
+  - il-6 receptor inhibitor
+  - il6 inhibitor
+
+BC007:
+  - bc007
+  - autoantibody neutralizer
+  - gpcr autoantibody
+
+# --- Mast Cell / Antihistamines ---
+
+Famotidine:
+  - famotidine
+  - pepcid
+  - h2 blocker
+  - h2 antagonist
+
+Antihistamines:
+  - antihistamine
+  - loratadine
+  - claritin
+  - cetirizine
+  - zyrtec
+  - fexofenadine
+  - allegra
+  - h1 antagonist
+
+Cromolyn Sodium:
+  - cromolyn sodium
+  - cromolyn
+  - cromoglicate
+  - mast cell stabilizer
+
+# --- Autonomic / POTS ---
+
+Ivabradine:
+  - ivabradine
+  - corlanor
+  - procoralan
+
+Guanfacine:
+  - guanfacine
+  - intuniv
+  - tenex
+
+Fludrocortisone:
+  - fludrocortisone
+  - florinef
+
+Midodrine:
+  - midodrine
+  - proamatine
+  - orvaten
+
+# --- Statins ---
+
+Statins:
+  - statin
+  - atorvastatin
+  - lipitor
+  - rosuvastatin
+  - crestor
+  - simvastatin
+  - zocor
+
+# --- Supplements with RCT evidence ---
+
+Omega-3:
+  - omega-3
+  - omega 3
+  - fish oil
+  - epa
+  - dha
+  - eicosapentaenoic acid
+  - docosahexaenoic acid
+
+L-arginine:
+  - l-arginine
+  - arginine
+  - l arginine
+
+Coenzyme Q10:
+  - coenzyme q10
+  - coq10
+  - ubiquinone
+  - ubiquinol
+
+Vitamin D:
+  - vitamin d
+  - vitamin d3
+  - cholecalciferol
+  - calciferol
+  - 25-hydroxyvitamin d
