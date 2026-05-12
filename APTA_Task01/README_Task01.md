@@ -1,11 +1,11 @@
 # APTA-BIOTECK · Task 01 Deliverable
 ## Curated Post-COVID Evidence Corpus — Dashboard & Structured Catalogues
 
-**Prepared for:** APTA / BIOTECK  
+**Prepared for:** APTA- BIOTECK  
 **Prepared by:** Fraunhofer SCAI  
 **Deliverable:** Task 01 · Foundation — Curated Post-COVID Study Corpus  
 **Version:** v1.0  
-**Delivery date:** 2026-05-07  
+**Delivery date:** 2026-05-19  
 **Confidentiality:** Fraunhofer SCAI · APTA Collaboration · Confidential
 
 ---
@@ -95,9 +95,6 @@ APTA_Task01/
 │   ├── corpus_queries.yaml
 │   ├── corpus_manifest.json
 │   └── coverage_report.txt
-│
-└── 04_Archive/
-    └── dashboard_snapshot.pdf
 ```
 
 ---
@@ -115,7 +112,6 @@ APTA_Task01/
 | `corpus_queries.yaml` | Final search configuration |
 | `corpus_manifest.json` | Run metadata, hashes, and provenance |
 | `coverage_report.txt` | Human-readable corpus summary and diagnostics |
-| `dashboard_snapshot.pdf` | Optional static archive copy of the dashboard |
 
 ---
 
@@ -180,33 +176,3 @@ Do not include or distribute:
 - internal-only scripts unless specifically requested
 
 ---
-
-## 10. Feedback template
-
-Please provide feedback using stable identifiers where possible.
-
-| Item | Identifier / term | Issue | Suggested action | Priority |
-|---|---|---|---|---|
-| Trial | NCTxxxxxxxx | Missing / incorrectly classified | Review search term or linkage | High |
-| Article | PMID / DOI | Missing / duplicate / wrong link | Review metadata | Medium |
-| Search term | Term | Too broad / too narrow / missing | Add/remove/refine | Medium |
-| Endpoint | Endpoint name | Needs harmonisation | Map in Task 02 CDM | High |
-
----
-
-## 11. Versioning
-
-Recommended archive name:
-
-```text
-APTA_Task01_PostCOVID_Corpus_Deliverable_v1.0_2026-05-07.zip
-```
-
-Version convention:
-
-| Version | Meaning |
-|---|---|
-| `v1.0` | Initial formal Task 01 delivery |
-| `v1.1` | Minor correction or dashboard formatting update |
-| `v1.2` | Small catalogue or metadata refinement |
-| `v2.0` | New corpus build after substantial search or scope changes |
