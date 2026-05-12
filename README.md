@@ -22,32 +22,6 @@ This framework builds a pipeline that ingests that literature and outputs a stru
 
 ---
 
-## Architecture overview
-
-```
-Biomedical Literature (PubMed · PMC · ClinicalTrials.gov · PDF)
-        │
-        ▼
-  Named Entity Recognition
-  (SciSpaCy + UMLS semantic typing)
-        │
-        ▼
-  Relation Extraction
-  (GPT-4o · reproducible · temperature=0 · pinned model snapshot)
-        │
-        ▼
-  Structured Triples
-  (entities · relationships · provenance · evidence weights)
-        │
-        ▼
-  Neo4j Knowledge Graph
-  (queryable · evidence-scored · conflict-flagged · auditable)
-```
-
-Every extraction run is stamped with a run ID, model version, and SHA-256 corpus hash — making results fully reproducible and auditable.
-
----
-
 ## Project structure
 
 The project is organised into five modular tasks. Each task has its own deliverables and a go/no-go review point before the next stage begins.
@@ -71,59 +45,13 @@ APTA_PostCOVID_TextToGraph/
 ├── assets/
 │   └── kg_preview.png                 ← knowledge graph preview
 │
-├── 00_Project_Documents/
-│   ├── APTA_Proposal.pdf
-│   ├── project_timeline.pdf
-│   └── decision_log.md
-│
 ├── Task01_Curated_Corpus/
 │   ├── README_Task01.md
 │   ├── 01_Dashboard/                  ← interactive HTML viewer
 │   ├── 02_Catalogues_CSV/
 │   ├── 03_Methods_Provenance/
-│   ├── 04_AI_Audit_Trail/
-│   └── 05_Archive/
-│
-├── Task02_KG_Schema_CDM/
-│   ├── README_Task02.md
-│   ├── schema_documentation/
-│   ├── entity_mapping_rules/
-│   ├── controlled_vocabularies/
-│   └── review_materials/
-│
-├── Task03_SCAIView_Optional/
-│   ├── README_Task03.md
-│   ├── scaiview_instance_notes/
-│   ├── annotation_configuration/
-│   └── quality_review/
-│
-├── Task04_TextToGraph_Extraction/
-│   ├── README_Task04.md
-│   ├── extraction_outputs/
-│   ├── normalised_triples/
-│   ├── qa_reports/
-│   └── provenance/
-│
-└── Task05_Evidence_KG/
-    ├── README_Task05.md
-    ├── neo4j_export/
-    ├── graph_schema/
-    ├── evidence_scoring/
-    ├── example_queries/
-    └── final_review_materials/
+│   └── 04_Archive/
 ```
-
----
-
-## Reproducibility
-
-All pipeline outputs are designed to be fully reproducible:
-
-- **Model pinning** — GPT calls use dated model snapshots (e.g. `gpt-4o-2024-08-06`), not floating aliases
-- **Deterministic extraction** — `temperature=0` across all LLM calls
-- **Corpus hashing** — SHA-256 hash stored per run to detect corpus drift
-- **Run manifests** — every extraction run logged with ID, timestamp, model version, and parameter snapshot
-- **Externalized configuration** — prompts and domain parameters live in version-controlled files, not hardcoded
 
 ---
 
