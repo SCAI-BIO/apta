@@ -50,7 +50,6 @@ APTA_PostCOVID_TextToGraph/
 │   ├── 01_Dashboard/                  ← interactive HTML viewer
 │   ├── 02_Catalogues_CSV/
 │   ├── 03_Methods_Provenance/
-│   └── 04_Archive/
 ```
 
 ---
