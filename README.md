@@ -1,4 +1,4 @@
-# APTA-BIOTECK · Post-COVID Text-to-Graph Framework
+# APTA Therapeutics · Post-COVID Text-to-Graph Framework
 
 **Collaboration:** Fraunhofer SCAI × APTA / BIOTECK  
 **Scope:** Transforming fragmented Post-COVID / Long COVID / PASC clinical evidence into a structured, reproducible, graph-queryable knowledge layer  
