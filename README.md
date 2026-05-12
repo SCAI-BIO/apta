@@ -1,6 +1,6 @@
-# APTA Therapeutics · Post-COVID Text-to-Graph Framework
+# Post-COVID Text-to-Graph Framework
 
-**Collaboration:** Fraunhofer SCAI × APTA / BIOTECK  
+**Collaboration:** Fraunhofer SCAI × APTA Therapeutics 
 **Scope:** Transforming fragmented Post-COVID / Long COVID / PASC clinical evidence into a structured, reproducible, graph-queryable knowledge layer  
 **Status:** Active · Task-gated delivery  
 > 🌐 **Live dashboard → [https://postcovid-apta.netlify.app](https://postcovid-apta.netlify.app)**
