@@ -1,0 +1,76 @@
+======================================================================
+APTA-BIOTECK Post-COVID Corpus — Coverage Report
+Generated: 2026-05-11T07:34:46.040782+00:00
+======================================================================
+
+RAW COUNTS (before filtering)
+  ctgov_raw                 1236
+  pubmed_raw                9943
+  europepmc_raw             2000
+  openalex_raw              2000
+
+AFTER CONJUNCTIVE TOPIC FILTER
+  trials_kept             738
+  articles_kept           7570
+
+CROSS-LINKS
+  trial_reference_pmid      221
+  nct_in_article            137
+  title_match               5
+
+EVIDENCE CORPUS
+  article_only              7366
+  trial_only                589
+  trial+article             229
+  TOTAL                    8184
+
+TRIAL EVIDENCE TIERS
+  tier 13                  6
+  tier 12                  20
+  tier 11                  15
+  tier 10                  6
+  tier  9                  1
+  tier  8                  20
+  tier  7                  30
+  tier  6                  254
+  tier  5                  73
+  tier  4                  131
+  tier  3                  78
+  tier  2                  104
+
+TRIAL STATUS DISTRIBUTION
+  COMPLETED                 307
+  RECRUITING                142
+  UNKNOWN                   115
+  NOT_YET_RECRUITING        59
+  ACTIVE_NOT_RECRUITING     53
+  WITHDRAWN                 24
+  TERMINATED                19
+  ENROLLING_BY_INVITATION   13
+  SUSPENDED                 6
+
+TRIALS WITH RESULTS
+  50 / 738 trials
+
+ARTICLES BY SOURCE (after dedup, '; '-joined when multi-source)
+  PubMed                              5825
+  Europe PMC; PubMed                  1049
+  Europe PMC                          148
+  OpenAlex; PubMed                    144
+  Europe PMC; OpenAlex; PubMed        115
+  Preprint (medRxiv/bioRxiv)          113
+  OpenAlex                            103
+  Europe PMC; Preprint (medRxiv/bioRxiv); PubMed 42
+  Preprint (medRxiv/bioRxiv); PubMed  18
+  Europe PMC; OpenAlex; Preprint (medRxiv/bioRxiv); PubMed 7
+
+YEAR DISTRIBUTION (articles)
+        2020              420
+        2021              916
+        2022              1365
+        2023              1414
+        2024              1483
+        2025              1438
+        2026              534
+
+======================================================================
