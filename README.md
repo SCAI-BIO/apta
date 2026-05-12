@@ -4,7 +4,7 @@
 **Scope:** Transforming fragmented Post-COVID / Long COVID / PASC clinical evidence into a structured, reproducible, graph-queryable knowledge layer  
 **Status:** Active · Task-gated delivery  
 > 🌐 **Live dashboard → [https://postcovid-apta.netlify.app](https://postcovid-apta.netlify.app)**
-[Knowledge Graph preview] (assests/kg_preview.png)
+[Knowledge Graph preview] (assets/kg_preview.png)
 ---
 
 ## What this project does
