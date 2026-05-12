@@ -28,22 +28,7 @@ The interactive dashboard is the main review interface. The CSV files are the au
 
 ---
 
-## 2. Executive summary
-
-The current corpus build contains:
-
-| Asset | Count / scope |
-|---|---:|
-| Clinical trial records | 602 trials |
-| Publication records | 2,282 articles |
-| Unified evidence units | 2,802 evidence records |
-| Trial–article links | 258 links |
-| Prioritised high-evidence trial subset | 28 trials |
-| Time span | 2020–2026 |
-
----
-
-## 3. How to review
+## 2. How to review
 
 ### Option A — hosted dashboard
 
@@ -73,7 +58,7 @@ These files are intended for technical review, downstream analysis, database imp
 
 ---
 
-## 4. Package contents
+## 3. Package contents
 
 ```text
 APTA_Task01/
@@ -99,7 +84,7 @@ APTA_Task01/
 
 ---
 
-## 5. Delivered files
+## 4. Delivered files
 
 | File | Description |
 |---|---|
@@ -115,7 +100,7 @@ APTA_Task01/
 
 ---
 
-## 6. Suggested APTA review workflow
+## 5. Suggested APTA review workflow
 
 1. Review the interactive dashboard.
 2. Inspect selected records in the CSV catalogues.
@@ -126,7 +111,7 @@ APTA_Task01/
 
 ---
 
-## 7. Scope and interpretation notes
+## 6. Scope and interpretation notes
 
 This corpus is a structured evidence foundation, not a clinical guideline or final evidence synthesis.
 
@@ -141,7 +126,7 @@ Important notes:
 
 ---
 
-## 8. Reproducibility and provenance
+## 7. Reproducibility and provenance
 
 The corpus is generated from a search configuration and reproducible pipeline.
 
@@ -161,7 +146,7 @@ The manifest records run metadata and file hashes. It should be retained with th
 
 ---
 
-## 9. Confidentiality
+## 8. Confidentiality
 
 This package is confidential project material for the Fraunhofer SCAI–APTA collaboration.
 
