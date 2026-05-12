@@ -1,7 +1,7 @@
 # APTA-BIOTECK · Task 01 Deliverable
 ## Curated Post-COVID Evidence Corpus — Dashboard & Structured Catalogues
 
-**Prepared for:** APTA- BIOTECK  
+**Prepared for:** APTA Therapeutics    
 **Prepared by:** Fraunhofer SCAI  
 **Deliverable:** Task 01 · Foundation — Curated Post-COVID Study Corpus  
 **Version:** v1.0  
