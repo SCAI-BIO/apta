@@ -15,6 +15,13 @@ therapies:
     - plasma exchange
     - plasmapheresis
     - therapeutic plasma exchange
+    
+  BC007 / Rovunaptabin:
+    - BC007
+    - BC 007
+    - BC-007
+    - Rovunaptabin
+    - BC007/Rovunaptabin
 
 targets:
   GPCR autoantibodies:
@@ -37,3 +44,4 @@ targets:
     - ace2 antibody
     - anti ace2
     - anti-ace2
+    

@@ -1,0 +1,41 @@
+# intervention_normalization.yaml
+
+canonical_interventions:
+  Rituximab / anti-CD20:
+    - rituximab
+    - rituxan
+    - mabthera
+    - anti cd20
+    - anti-cd20
+
+  IVIG / immunoglobulin:
+    - ivig
+    - intravenous immunoglobulin
+    - immunoglobulin
+
+  Therapeutic plasma exchange:
+    - plasma exchange
+    - plasmapheresis
+    - therapeutic plasma exchange
+
+  BC007:
+    - bc007
+    - bc 007
+    - bc-007
+    - rovunaptabin
+
+  Paxlovid / nirmatrelvir-ritonavir:
+    - paxlovid
+    - nirmatrelvir
+    - ritonavir
+
+stop_phrases:
+  - placebo
+  - matching placebo
+  - placebo comparator
+  - experimental
+  - active comparator
+  - standard of care
+  - standard of care treatment
+  - usual care
+  - control
